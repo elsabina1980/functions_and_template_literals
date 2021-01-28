@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici Functions &amp; Template Literals - IT Acadamey - NodeJs - Sprint1</title>
+    <script type="text/javascript" src="./code.js"></script>
+    <style>
+        .grid {
+            margin-top: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(2, 50%);
+        }
+        
+        .console {
+            background-color: lightslategray;
+            color: white;
+            padding: .25em .5em;
+            margin: .25em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <form onsubmit="printName()">
+            <input id="yourName" type="text" />
+            <button type="submit">Print your Name</button>
+        </form>
+        <div class="console">
+            <p id="consoleName">Type your name</p>
+        </div>
+        <form onsubmit="printFullName()">
+            <input id="yourSurname" type="text" />
+            <button type="submit">Print your Fullname</button>
+        </form>
+        <div class="console">
+            <p id="consoleFullname">Type your username to get your fullname</p>
+        </div>
+    </div>
+</body>
+
+</html>
